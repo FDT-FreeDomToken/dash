@@ -16,7 +16,7 @@ transactions:
     2-101:    bury that block with 100 blocks so the coinbase transaction
               output can be spent
     102:      a block containing a transaction spending the coinbase
-              transaction output. The transaction has an invalid signature. 
+              transaction output. The transaction has an invalid signature.
     103-2202: bury the bad block with just over two weeks' worth of blocks
               (2100 blocks)
 
@@ -45,7 +45,7 @@ class BaseNode(SingleNodeConnCB):
         self.last_headers = None
         self.last_block = None
         self.last_getdata = None
-        self.block_announced = False
+        self.block_announced = True
         self.last_getheaders = None
         self.disconnected = False
         self.last_blockhash_announced = None
